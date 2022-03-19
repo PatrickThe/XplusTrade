@@ -1,0 +1,9 @@
+<script>
+document.getElementById("test_id").onkeyup = function() {
+  var input = parseInt(this.value);
+  if (input < 0 || input > 100)
+    console.log("Value should be between 0 - 100");
+  return;
+}
+</script>
+<input type="text" id="test_id" />
